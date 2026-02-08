@@ -112,8 +112,16 @@ export default function SuspectsPage() {
                 className="text-left p-4 border border-border bg-card hover:border-primary hover:box-glow transition-all"
               >
                 <div className="flex gap-4">
-                  <div className="w-16 h-16 bg-muted border border-border flex items-center justify-center flex-shrink-0">
-                    <User className="w-8 h-8 text-muted-foreground" />
+                  <div className="w-16 h-16 bg-muted border border-border flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    {character.photoUrl ? (
+                      <img
+                        src={character.photoUrl}
+                        alt={`Mugshot: ${character.fullName}`}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground" />
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-bold text-primary tracking-wider truncate">
@@ -150,8 +158,16 @@ export default function SuspectsPage() {
             <div className="space-y-6">
               {/* Mugshot & Basic Info */}
               <div className="flex gap-6">
-                <div className="w-32 h-40 bg-muted border border-border flex items-center justify-center flex-shrink-0">
-                  <User className="w-16 h-16 text-muted-foreground" />
+                <div className="w-32 h-40 bg-muted border border-border flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  {selectedCharacter.photoUrl ? (
+                    <img
+                      src={selectedCharacter.photoUrl}
+                      alt={`Mugshot: ${selectedCharacter.fullName}`}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <User className="w-16 h-16 text-muted-foreground" />
+                  )}
                 </div>
                 <div className="space-y-3 flex-1">
                   <div>
@@ -236,8 +252,16 @@ export default function SuspectsPage() {
                   <Fingerprint className="w-4 h-4 text-primary" />
                   <p className="text-xs text-muted-foreground tracking-wider">FINGERPRINT ON FILE</p>
                 </div>
-                <div className="w-24 h-24 bg-muted border border-border flex items-center justify-center">
-                  <Fingerprint className="w-12 h-12 text-muted-foreground" />
+                <div className="w-24 h-24 bg-muted border border-border flex items-center justify-center overflow-hidden">
+                  {selectedCharacter.fingerprintUrl ? (
+                    <img
+                      src={selectedCharacter.fingerprintUrl}
+                      alt={`Fingerprint: ${selectedCharacter.fullName}`}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <Fingerprint className="w-12 h-12 text-muted-foreground" />
+                  )}
                 </div>
               </div>
 
