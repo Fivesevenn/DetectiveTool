@@ -45,11 +45,12 @@ export interface Evidence {
   id: string;
   caseId: string;
   subjectName: string;
-  evidenceType: 'Witness Statement' | 'CCTV' | 'Audio Recording' | 'Document';
+  evidenceType: 'Witness Statement' | 'CCTV' | 'Audio Recording' | 'Document' | 'Photo';
   description: string;
   audioUrl?: string;
   videoUrl?: string;
   documentUrl?: string;
+  photoUrl?: string;
   timestamp: string;
 }
 
@@ -202,6 +203,15 @@ export const evidence: Evidence[] = [
     description: 'Footage shows system malfunction at 02:13 - possible EMP device used',
     videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
     timestamp: '2024-02-01 02:13:00'
+  },
+  {
+    id: 'EV-005',
+    caseId: 'ALPHA-0116',
+    subjectName: 'Surveillance Photo',
+    evidenceType: 'Photo',
+    description: 'Photo evidence recovered from scene',
+    photoUrl: '/media/photo/photo1.png',
+    timestamp: '2024-01-16 12:00:00'
   }
 ];
 

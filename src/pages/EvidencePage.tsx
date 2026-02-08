@@ -13,7 +13,8 @@ import {
   Mic,
   Video,
   FileSpreadsheet,
-  Clock
+  Clock,
+  Image
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -36,6 +37,8 @@ export default function EvidencePage() {
         return <Mic className="w-5 h-5" />;
       case 'Witness Statement':
         return <FileSpreadsheet className="w-5 h-5" />;
+      case 'Photo':
+        return <Image className="w-5 h-5" />;
       default:
         return <FileText className="w-5 h-5" />;
     }
@@ -283,6 +286,29 @@ export default function EvidencePage() {
                         </a>
                         <span className="text-xs text-muted-foreground font-terminal">
                           DOCUMENT VIEWER
+                        </span>
+                      </div>
+                    </div>
+                  ) : selectedEvidence.photoUrl ? (
+                    <div className="space-y-4">
+                      <div className="border border-border bg-background overflow-hidden">
+                        <img
+                          src={selectedEvidence.photoUrl}
+                          alt={selectedEvidence.subjectName}
+                          className="w-full max-h-[500px] object-contain bg-muted"
+                        />
+                      </div>
+                      <div className="flex items-center gap-4 p-3 bg-background border border-border">
+                        <a
+                          href={selectedEvidence.photoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-primary hover:underline font-terminal"
+                        >
+                          OPEN IN NEW TAB
+                        </a>
+                        <span className="text-xs text-muted-foreground font-terminal">
+                          PHOTO EVIDENCE
                         </span>
                       </div>
                     </div>
