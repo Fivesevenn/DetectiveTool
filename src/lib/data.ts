@@ -49,6 +49,7 @@ export interface Evidence {
   description: string;
   audioUrl?: string;
   videoUrl?: string;
+  documentUrl?: string;
   timestamp: string;
 }
 
@@ -190,6 +191,7 @@ export const evidence: Evidence[] = [
     subjectName: 'Maria Santos - Dock Worker',
     evidenceType: 'Witness Statement',
     description: 'Written statement regarding unusual shipments received in the past month',
+    documentUrl: '/media/document/document1.pdf',
     timestamp: '2024-01-17 14:30:00'
   },
   {

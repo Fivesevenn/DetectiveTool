@@ -258,6 +258,29 @@ export default function EvidencePage() {
                         </span>
                       </div>
                     </div>
+                  ) : selectedEvidence.documentUrl ? (
+                    <div className="space-y-4">
+                      <div className="border border-border bg-background overflow-hidden">
+                        <iframe
+                          src={selectedEvidence.documentUrl}
+                          title="Document evidence"
+                          className="w-full aspect-[4/3] min-h-[400px] border-0"
+                        />
+                      </div>
+                      <div className="flex items-center gap-4 p-3 bg-background border border-border">
+                        <a
+                          href={selectedEvidence.documentUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-primary hover:underline font-terminal"
+                        >
+                          OPEN IN NEW TAB
+                        </a>
+                        <span className="text-xs text-muted-foreground font-terminal">
+                          DOCUMENT VIEWER
+                        </span>
+                      </div>
+                    </div>
                   ) : (
                     <div className="aspect-video bg-background border border-border flex flex-col items-center justify-center">
                       <FileSpreadsheet className="w-12 h-12 text-muted-foreground mb-4" />
