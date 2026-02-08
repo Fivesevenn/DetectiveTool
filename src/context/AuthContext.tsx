@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { Detective, Case, detectives, cases } from '@/lib/data';
 
 interface AuthState {
@@ -16,36 +16,12 @@ interface AuthContextType extends AuthState {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'precinct_auth';
-
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [authState, setAuthState] = useState<AuthState>({
     isAuthenticated: false,
     detective: null,
     selectedCase: null,
   });
-
-  // Load from localStorage on mount
-  useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored);
-        setAuthState(parsed);
-      } catch {
-        localStorage.removeItem(STORAGE_KEY);
-      }
-    }
-  }, []);
-
-  // Save to localStorage on change
-  useEffect(() => {
-    if (authState.isAuthenticated) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(authState));
-    } else {
-      localStorage.removeItem(STORAGE_KEY);
-    }
-  }, [authState]);
 
   const login = (badgeNumber: string, password: string): { success: boolean; error?: string } => {
     const detective = detectives.find(
