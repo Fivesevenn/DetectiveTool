@@ -182,7 +182,7 @@ export const evidence: Evidence[] = [
     subjectName: 'Anonymous Caller',
     evidenceType: 'Audio Recording',
     description: 'Tip line recording - Caller claims to have witnessed suspicious loading activity',
-    audioUrl: 'media/audio/audio1.mp3',
+    audioUrl: '/media/audio/audio1.mp3',
     timestamp: '2024-01-16 08:15:00'
   },
   {
