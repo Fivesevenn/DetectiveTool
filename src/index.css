@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Noir/Cyber-precinct Design System */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+@layer base {
+  :root {
+    /* Terminal Amber Theme */
+    --background: 220 20% 4%;
+    --foreground: 43 100% 50%;
+
+    --card: 220 20% 6%;
+    --card-foreground: 43 100% 50%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 43 100% 50%;
+
+    --primary: 43 100% 50%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 43 100% 50%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 43 50% 40%;
+
+    --accent: 43 100% 50%;
+    --accent-foreground: 220 20% 4%;
+
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 43 60% 25%;
+    --input: 220 15% 12%;
+    --ring: 43 100% 50%;
+
+    --radius: 0.25rem;
+
+    /* Custom Noir Variables */
+    --terminal-amber: 43 100% 50%;
+    --terminal-amber-dim: 43 80% 35%;
+    --terminal-green: 120 100% 40%;
+    --scanline-opacity: 0.03;
+    --crt-glow: 0 0 20px hsl(43 100% 50% / 0.3);
+  }
+
+  .dark {
+    --background: 220 20% 4%;
+    --foreground: 43 100% 50%;
+    --card: 220 20% 6%;
+    --card-foreground: 43 100% 50%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 43 100% 50%;
+    --primary: 43 100% 50%;
+    --primary-foreground: 220 20% 4%;
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 43 100% 50%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 43 50% 40%;
+    --accent: 43 100% 50%;
+    --accent-foreground: 220 20% 4%;
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 43 60% 25%;
+    --input: 220 15% 12%;
+    --ring: 43 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', 'Share Tech Mono', monospace;
+  }
+
+  /* CRT Scanline Effect */
+  .crt-effect {
+    position: relative;
+  }
+
+  .crt-effect::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(var(--foreground) / var(--scanline-opacity)) 2px,
+      hsl(var(--foreground) / var(--scanline-opacity)) 4px
+    );
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .crt-effect::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      hsl(var(--background) / 0.3) 100%
+    );
+    pointer-events: none;
+    z-index: 51;
+  }
+
+  /* CRT Flicker Animation */
+  @keyframes flicker {
+    0% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.9; }
+    94% { opacity: 1; }
+    96% { opacity: 0.95; }
+    100% { opacity: 1; }
+  }
+
+  .crt-flicker {
+    animation: flicker 4s infinite;
+  }
+
+  /* Terminal Glow Effect */
+  .terminal-glow {
+    text-shadow: 0 0 10px hsl(var(--terminal-amber) / 0.8),
+                 0 0 20px hsl(var(--terminal-amber) / 0.4),
+                 0 0 30px hsl(var(--terminal-amber) / 0.2);
+  }
+
+  .terminal-glow-green {
+    text-shadow: 0 0 10px hsl(var(--terminal-green) / 0.8),
+                 0 0 20px hsl(var(--terminal-green) / 0.4);
+  }
+
+  /* Box Glow */
+  .box-glow {
+    box-shadow: 0 0 10px hsl(var(--terminal-amber) / 0.3),
+                inset 0 0 20px hsl(var(--terminal-amber) / 0.05);
+  }
+
+  /* Typing Animation */
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .cursor-blink::after {
+    content: '█';
+    animation: blink 1s infinite;
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--terminal-amber-dim));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--terminal-amber));
+  }
+
+  /* Selection */
+  ::selection {
+    background: hsl(var(--terminal-amber) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .font-terminal {
+    font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+  }
+
+  .text-amber {
+    color: hsl(var(--terminal-amber));
+  }
+
+  .text-amber-dim {
+    color: hsl(var(--terminal-amber-dim));
+  }
+
+  .bg-terminal {
+    background-color: hsl(var(--background));
+  }
+
+  .border-amber {
+    border-color: hsl(var(--terminal-amber));
+  }
+
+  .border-amber-dim {
+    border-color: hsl(var(--terminal-amber-dim));
+  }
+}
