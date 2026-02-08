@@ -99,8 +99,8 @@ export const characters: Character[] = [
     alias: 'The Broker',
     lastKnownAddress: '1847 Harbor View Dr, Apt 12B',
     phoneNumber: '555-0147',
-    photoUrl: '/public/media/mugshot/mugshot_Jane.jpg',
-    fingerprintUrl: '/public/media/fingerprints/fingerprint_jane.jpg',
+    photoUrl: 'media/mugshot/mugshot_Jane.jpg',
+    fingerprintUrl: 'media/fingerprints/fingerprint_jane.jpg',
     carId: 'CAR-001',
     notes: 'Known associate of underground networks. Last seen near pier 7.'
   },
