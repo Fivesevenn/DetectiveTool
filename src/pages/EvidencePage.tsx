@@ -41,15 +41,19 @@ export default function EvidencePage() {
     }
   };
 
-  const handlePlayPause = () => {
+  const handlePlayPause = async () => {
     const media = videoRef.current || audioRef.current;
-    if (media) {
+    if (!media) return;
+    try {
       if (isPlaying) {
         media.pause();
+        setIsPlaying(false);
       } else {
-        media.play();
+        await media.play();
+        setIsPlaying(true);
       }
-      setIsPlaying(!isPlaying);
+    } catch {
+      setIsPlaying(false);
     }
   };
 
@@ -232,6 +236,7 @@ export default function EvidencePage() {
                           ref={audioRef}
                           src={selectedEvidence.audioUrl}
                           onEnded={() => setIsPlaying(false)}
+                          onError={() => setIsPlaying(false)}
                         />
                       </div>
                       
