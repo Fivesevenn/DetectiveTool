@@ -164,7 +164,6 @@ export const cars: Car[] = [
   }
 ];
 
-
 // Evidence files
 export const evidence: Evidence[] = [
   {
@@ -173,7 +172,7 @@ export const evidence: Evidence[] = [
     subjectName: 'Harbor Security Camera #7',
     evidenceType: 'CCTV',
     description: 'Footage showing unidentified vehicle near pier 7 at 23:47',
-    videoUrl: 'public/media/photo/video1.mp4',
+    videoUrl: 'public/media/photo/video1.mov',
     timestamp: '2024-01-15 23:47:00'
   },
   {
