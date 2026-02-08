@@ -99,8 +99,8 @@ export const characters: Character[] = [
     alias: 'The Broker',
     lastKnownAddress: '1847 Harbor View Dr, Apt 12B',
     phoneNumber: '555-0147',
-    photoUrl: 'media/mugshot/mugshot_Jane.jpg',
-    fingerprintUrl: 'media/fingerprints/fingerprint_jane.jpg',
+    photoUrl: '/media/mugshot/mugshot_Jane.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_jane.jpg',
     carId: 'CAR-001',
     notes: 'Known associate of underground networks. Last seen near pier 7.'
   },
@@ -110,8 +110,8 @@ export const characters: Character[] = [
     fullName: 'Elena Vasquez',
     lastKnownAddress: '2301 Industrial Blvd, Unit 5',
     phoneNumber: '555-0298',
-    photoUrl: '/placeholder.svg',
-    fingerprintUrl: '/placeholder.svg',
+    photoUrl: '/media/mugshot/mugshot_Jane.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_jane.jpg',
     carId: 'CAR-002',
     notes: 'Warehouse manager. Claims no knowledge of after-hours activities.'
   },
