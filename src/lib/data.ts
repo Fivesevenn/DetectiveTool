@@ -55,8 +55,8 @@ export interface Evidence {
 // Authorized detectives
 export const detectives: Detective[] = [
   {
-    badgeNumber: 'ABSDE',
-    password: '152689',
+    badgeNumber: 'A',
+    password: '1',
     name: 'Detective Martinez',
     rank: 'Senior Detective'
   }
@@ -67,7 +67,7 @@ export const cases: Case[] = [
   {
     id: 'ALPHA-0116',
     caseName: 'Case Alpha#0116',
-    accessCode: 'GAMMA7',
+    accessCode: '1',
     status: 'Open',
     description: 'Missing persons investigation - High priority. Multiple witnesses reported unusual activity near the harbor district.',
     dateOpened: '2024-01-16'
