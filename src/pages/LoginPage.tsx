@@ -13,7 +13,7 @@ export default function LoginPage() {
   const [bootText, setBootText] = useState('');
 
   const bootSequence = [
-    'INITIALIZING PRECINCT DATABASE...',
+    'INITIALIZING REDFILEMYSTERIES DATABASE...',
     'LOADING SECURITY PROTOCOLS...',
     'ESTABLISHING ENCRYPTED CONNECTION...',
     'SYSTEM READY - AWAITING CREDENTIALS'
