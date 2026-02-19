@@ -85,7 +85,7 @@ export default function LoginPage() {
             <Shield className="w-16 h-16 text-primary terminal-glow" />
           </div>
           <h1 className="text-2xl font-bold tracking-widest terminal-glow mb-2">
-            PRECINCT DATABASE
+            Mississauga PD DATABASE
           </h1>
           <p className="text-xs text-muted-foreground tracking-wider">
             RESTRICTED ACCESS - AUTHORIZED PERSONNEL ONLY

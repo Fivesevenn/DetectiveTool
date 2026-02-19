@@ -60,7 +60,7 @@ export const detectives: Detective[] = [
     badgeNumber: '3295',
     password: 'JLTFG',
     name: 'Detective Martinez',
-    rank: 'Senior Detective'
+    rank: 'Intern'
   }
 ];
 
