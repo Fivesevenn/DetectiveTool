@@ -49,7 +49,7 @@ export default function DashboardPage() {
             <Shield className="w-8 h-8 text-primary" />
             <div>
               <h1 className="text-xl font-bold tracking-widest terminal-glow">
-                PRECINCT DASHBOARD
+                Mississauga PD DASHBOARD
               </h1>
               <p className="text-xs text-muted-foreground">
                 {detective?.rank} | {detective?.name}

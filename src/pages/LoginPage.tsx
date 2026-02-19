@@ -147,7 +147,7 @@ export default function LoginPage() {
 
       {/* System Info */}
       <div className="mt-8 text-xs text-muted-foreground text-center font-terminal">
-        <p>SYSTEM v2.4.1 | NODE: PRECINCT-MAIN</p>
+        <p>SYSTEM v2.4.1 | NODE: Mississauga PD-MAIN</p>
         <p>LAST SECURITY UPDATE: {new Date().toLocaleDateString()}</p>
       </div>
     </div>

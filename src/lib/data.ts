@@ -71,7 +71,7 @@ export const cases: Case[] = [
     caseName: 'Case 2025-147',
     accessCode: '1',
     status: 'Open',
-    description: 'Missing persons investigation - High priority. Multiple witnesses reported unusual activity near the harbor district.',
+    description: 'Death ruled as drowning of Jane smith. No further investigation required',
     dateOpened: '2024-01-16'
   },
   {
