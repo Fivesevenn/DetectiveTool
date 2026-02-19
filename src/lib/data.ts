@@ -101,8 +101,8 @@ export const characters: Character[] = [
     alias: 'The Bestfriend',
     lastKnownAddress: 'unknown',
     phoneNumber: '555-0189',
-    photoUrl: '/media/mugshot/mugshot_Olivia.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Olivia.jpg',
+    photoUrl: '/media/mugshot/mugshot_Olivia.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Olivia.png',
     carId: 'CAR-001',
     notes: 'Witness picture available: wearing a leopard-print dress in muted beige and black.A fine gold chain bracelet adorned with tiny polished beads and a single luminous stone'
   },
@@ -113,8 +113,8 @@ export const characters: Character[] = [
     alias: 'Co-worker',
     lastKnownAddress: 'unknown',
     phoneNumber: '555-0298',
-    photoUrl: '/media/mugshot/mugshot_Rachel.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Rachel.jpg',
+    photoUrl: '/media/mugshot/mugshot_Rachel.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Rachel.png',
     carId: 'CAR-002',
     notes: 'Claims she was not in good terms with rachel but that doesn\'t make her a killer'
   },
@@ -125,8 +125,8 @@ export const characters: Character[] = [
     alias: 'The sister',
     lastKnownAddress: '2847 Oak Avenue',
     phoneNumber: '555-8475',
-    photoUrl: '/media/mugshot/mugshot_Sarah.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Sarah.jpg',
+    photoUrl: '/media/mugshot/mugshot_Sarah.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Sarah.png',
     carId: 'CAR-003',
     notes: 'provided witness statement in audio. Person seemed scared and hiding something.'
   },
@@ -137,8 +137,8 @@ export const characters: Character[] = [
     alias: 'The Date',
     lastKnownAddress: 'unknown',
     phoneNumber: '555-2748',
-    photoUrl: '/media/mugshot/mugshot_Derek.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Derek.jpg',
+    photoUrl: '/media/mugshot/mugshot_Derek.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Derek.png',
     carId: 'CAR-004',
     notes: 'Met Jane the night of the incident. Claimed the evening ended early, but timeline details remain unclear.'
   },
@@ -149,8 +149,8 @@ export const characters: Character[] = [
     alias: 'The Ex Boyfriend',
     lastKnownAddress: '2847 Weston Road',
     phoneNumber: '555-3921',
-    photoUrl: '/media/mugshot/mugshot_Travis.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Travis.jpg',
+    photoUrl: '/media/mugshot/mugshot_Travis.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Travis.png',
     carId: 'CAR-005',
     notes: 'Criminal record: 2019 - Possession of Controlled Substance (Cocaine) - Convicted, 6 months probation 2020 - Domestic Disturbance - Charges dropped 2021 - Assault (Domestic) - Convicted, 1 year probation, anger management program mandated 2023 - Possession of Controlled Substance (Marijuana) - Charges dropped'
   },
@@ -161,8 +161,8 @@ export const characters: Character[] = [
     alias: 'The Uber Driver',
     lastKnownAddress: 'unknown',
     phoneNumber: '555-6103',
-    photoUrl: '/media/mugshot/mugshot_Vikash.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Vikash.jpg',
+    photoUrl: '/media/mugshot/mugshot_Vikash.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Vikash.png',
     carId: 'CAR-006',
     notes: 'Statement saved as audio.'
   },
@@ -247,7 +247,7 @@ export const evidence: Evidence[] = [
     subjectName: '2849 Oak Avenue security camera',
     evidenceType: 'CCTV',
     description: 'Footage showing Jane being dropped off',
-    videoUrl: 'media/video/video1.mov',
+    videoUrl: '/media/video/video1.mp4',
     timestamp: 'as stated'
   },
   {
@@ -292,7 +292,7 @@ export const evidence: Evidence[] = [
     subjectName: '2849 Oak Avenue security camera',
     evidenceType: 'CCTV',
     description: 'Footage showing Jane getting into a car-time stamp missing',
-    videoUrl: 'media/video/video2.mov',
+    videoUrl: '/media/video/video2.mp4',
     timestamp: '-'
   },
   {
