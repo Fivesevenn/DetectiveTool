@@ -57,8 +57,8 @@ export interface Evidence {
 // Authorized detectives
 export const detectives: Detective[] = [
   {
-    badgeNumber: 'A',
-    password: '1',
+    badgeNumber: '3295',
+    password: 'JLTFG',
     name: 'Detective Martinez',
     rank: 'Senior Detective'
   }
@@ -67,27 +67,27 @@ export const detectives: Detective[] = [
 // Case files
 export const cases: Case[] = [
   {
-    id: 'ALPHA-0116',
-    caseName: 'Case Alpha#0116',
+    id: '2025-147',
+    caseName: 'Case 2025-147',
     accessCode: '1',
     status: 'Open',
     description: 'Missing persons investigation - High priority. Multiple witnesses reported unusual activity near the harbor district.',
     dateOpened: '2024-01-16'
   },
   {
-    id: 'BETA-0089',
-    caseName: 'Case Beta#0089',
+    id: '2025-145',
+    caseName: 'Case 2025-145',
     accessCode: 'DELTA3',
     status: 'Closed',
     description: 'Corporate espionage - Resolved. Suspect apprehended and evidence secured.',
     dateOpened: '2023-11-02'
   },
   {
-    id: 'OMEGA-0234',
-    caseName: 'Case Omega#0234',
+    id: '2025-146',
+    caseName: 'Case 2025-146',
     accessCode: 'SIGMA9',
     status: 'Open',
-    description: 'Art theft from municipal gallery. Insurance claim pending investigation.',
+    description: 'Investigation of a missing 50 000 USD from Hartfield Realty',
     dateOpened: '2024-02-01'
   }
 ];
@@ -96,133 +96,239 @@ export const cases: Case[] = [
 export const characters: Character[] = [
   {
     id: 'CHAR-001',
-    caseId: 'ALPHA-0116',
-    fullName: 'Marcus Webb',
-    alias: 'The Broker',
-    lastKnownAddress: '1847 Harbor View Dr, Apt 12B',
-    phoneNumber: '555-0147',
-    photoUrl: '/media/mugshot/mugshot_Jane.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_jane.jpg',
+    caseId: '2025-147',
+    fullName: 'Olivia Jean Martin',
+    alias: 'The Bestfriend',
+    lastKnownAddress: 'unknown',
+    phoneNumber: '555-0189',
+    photoUrl: '/media/mugshot/mugshot_Olivia.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Olivia.jpg',
     carId: 'CAR-001',
-    notes: 'Known associate of underground networks. Last seen near pier 7.'
+    notes: 'Witness picture available: wearing a leopard-print dress in muted beige and black.A fine gold chain bracelet adorned with tiny polished beads and a single luminous stone'
   },
   {
     id: 'CHAR-002',
-    caseId: 'ALPHA-0116',
-    fullName: 'Elena Vasquez',
-    lastKnownAddress: '2301 Industrial Blvd, Unit 5',
+    caseId: '2025-147',
+    fullName: 'Rachel bennett',
+    alias: 'Co-worker',
+    lastKnownAddress: 'unknown',
     phoneNumber: '555-0298',
-    photoUrl: '/media/mugshot/mugshot_Jane.jpg',
-    fingerprintUrl: '/media/fingerprints/fingerprint_jane.jpg',
+    photoUrl: '/media/mugshot/mugshot_Rachel.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Rachel.jpg',
     carId: 'CAR-002',
-    notes: 'Warehouse manager. Claims no knowledge of after-hours activities.'
+    notes: 'Claims she was not in good terms with rachel but that doesn\'t make her a killer'
   },
   {
     id: 'CHAR-003',
-    caseId: 'OMEGA-0234',
-    fullName: 'Theodore Crane',
-    alias: 'The Collector',
-    lastKnownAddress: '890 Uptown Ave, Penthouse',
-    phoneNumber: '555-0456',
-    photoUrl: '/placeholder.svg',
-    notes: 'Art dealer with connections to black market. Alibi under investigation.'
-  }
+    caseId: '2025-147',
+    fullName: 'Sarah Smith',
+    alias: 'The sister',
+    lastKnownAddress: '2847 Oak Avenue',
+    phoneNumber: '555-8475',
+    photoUrl: '/media/mugshot/mugshot_Sarah.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Sarah.jpg',
+    carId: 'CAR-003',
+    notes: 'provided witness statement in audio. Person seemed scared and hiding something.'
+  },
+  {
+    id: 'CHAR-004',
+    caseId: '2025-147',
+    fullName: 'Derek Holloway',
+    alias: 'The Date',
+    lastKnownAddress: 'unknown',
+    phoneNumber: '555-2748',
+    photoUrl: '/media/mugshot/mugshot_Derek.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Derek.jpg',
+    carId: 'CAR-004',
+    notes: 'Met Jane the night of the incident. Claimed the evening ended early, but timeline details remain unclear.'
+  },
+  {
+    id: 'CHAR-005',
+    caseId: '2025-147',
+    fullName: 'Travis Barett',
+    alias: 'The Ex Boyfriend',
+    lastKnownAddress: '2847 Weston Road',
+    phoneNumber: '555-3921',
+    photoUrl: '/media/mugshot/mugshot_Travis.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Travis.jpg',
+    carId: 'CAR-005',
+    notes: 'Criminal record: 2019 - Possession of Controlled Substance (Cocaine) - Convicted, 6 months probation 2020 - Domestic Disturbance - Charges dropped 2021 - Assault (Domestic) - Convicted, 1 year probation, anger management program mandated 2023 - Possession of Controlled Substance (Marijuana) - Charges dropped'
+  },
+  {
+    id: 'CHAR-006',
+    caseId: '2025-147',
+    fullName: 'Vikash Banerjee',
+    alias: 'The Uber Driver',
+    lastKnownAddress: 'unknown',
+    phoneNumber: '555-6103',
+    photoUrl: '/media/mugshot/mugshot_Vikash.jpg',
+    fingerprintUrl: '/media/fingerprints/fingerprint_Vikash.jpg',
+    carId: 'CAR-006',
+    notes: 'Statement saved as audio.'
+  },
+
 ];
 
 // Vehicles
 export const cars: Car[] = [
   {
     id: 'CAR-001',
-    caseId: 'ALPHA-0116',
-    licensePlate: 'XK7-4921',
-    make: 'Chevrolet',
-    model: 'Impala',
-    color: 'Black',
-    year: 2019,
-    vinNumber: '1G1YY22G965109876',
+    caseId: '2025-147',
+    licensePlate: 'KVL 723',
+    make: 'Ford',
+    model: 'Escape',
+    color: 'Red',
+    year: 2017,
+    vinNumber: '1FMCU0GD7HUB39154',
     ownerId: 'CHAR-001'
   },
   {
     id: 'CAR-002',
-    caseId: 'ALPHA-0116',
-    licensePlate: 'MN3-8847',
-    make: 'Ford',
-    model: 'Transit',
-    color: 'White',
-    year: 2021,
-    vinNumber: '1FTBW2CM4JKA45678',
-    ownerId: 'CHAR-002'
+    caseId: '2025-147',
+    licensePlate: 'LPR 418',
+    make: 'Honda',
+    model: 'Civic',
+    color: 'Black',
+    year: 2016,
+    vinNumber: '2HGFC2F59GH512784',
+    ownerId: 'CHAR-005'
   },
   {
     id: 'CAR-003',
-    caseId: 'OMEGA-0234',
-    licensePlate: 'VIP-0001',
-    make: 'Mercedes-Benz',
-    model: 'S-Class',
-    color: 'Silver',
-    year: 2023,
-    vinNumber: 'WDDUG8CB2LA567890',
+    caseId: '2025-147',
+    licensePlate: 'JTK 662',
+    make: 'Hyundai',
+    model: 'Elantra',
+    color: 'White',
+    year: 2015,
+    vinNumber: '5NPDH4AE1FH603218',
     ownerId: 'CHAR-003'
-  }
+  },
+  {
+    id: 'CAR-004',
+    caseId: '2025-147',
+    licensePlate: 'GLD 990',
+    make: 'BMW',
+    model: '7 Series',
+    color: 'Midnight Blue',
+    year: 2022,
+    vinNumber: 'WBA7U2C57NCG87421',
+    ownerId: 'CHAR-004'
+  },
+  {
+    id: 'CAR-005',
+    caseId: '2025-147',
+    licensePlate: 'QRS 517',
+    make: 'Nissan',
+    model: 'Altima',
+    color: 'Grey',
+    year: 2017,
+    vinNumber: '1N4AL3AP5HC284659',
+    ownerId: 'CHAR-005'
+  },
+  {
+    id: 'CAR-006',
+    caseId: '2025-147',
+    licensePlate: 'BKJH 847',
+    make: 'Toyota',
+    model: 'Camry',
+    color: 'Grey',
+    year: 2018,
+    vinNumber: '4T1B11HK5JU274839',
+    ownerId: 'CHAR-006'
+  },
 ];
 
 // Evidence files
 export const evidence: Evidence[] = [
   {
     id: 'EV-001',
-    caseId: 'ALPHA-0116',
-    subjectName: 'Harbor Security Camera #7',
+    caseId: '2025-147',
+    subjectName: '2849 Oak Avenue security camera',
     evidenceType: 'CCTV',
-    description: 'Footage showing unidentified vehicle near pier 7 at 23:47',
+    description: 'Footage showing Jane being dropped off',
     videoUrl: 'media/video/video1.mov',
-    timestamp: '2024-01-15 23:47:00'
+    timestamp: 'as stated'
   },
   {
     id: 'EV-002',
-    caseId: 'ALPHA-0116',
-    subjectName: 'Anonymous Caller',
+    caseId: '2025-147',
+    subjectName: 'Olivia Martin',
     evidenceType: 'Audio Recording',
-    description: 'Tip line recording - Caller claims to have witnessed suspicious loading activity',
+    description: 'Interview photo available for this witness statement',
     audioUrl: '/media/audio/audio1.mp3',
-    timestamp: '2024-01-16 08:15:00'
+    timestamp: 'No timestamp'
   },
   {
     id: 'EV-003',
-    caseId: 'ALPHA-0116',
+    caseId: '2025-147',
+    subjectName: 'Sarah Smith',
+    evidenceType: 'Audio Recording',
+    description: 'Interview photo not available',
+    audioUrl: '/media/audio/audio2.mp3',
+    timestamp: 'No timestamp'
+  },
+  {
+    id: 'EV-004',
+    caseId: '2025-147',
+    subjectName: 'Vikash Banerjee',
+    evidenceType: 'Audio Recording',
+    description: 'Interview photo not available',
+    audioUrl: '/media/audio/audio4.mp3',
+    timestamp: 'No timestamp'
+  },
+  {
+    id: 'EV-005',
+    caseId: '2025-147',
     subjectName: 'Maria Santos - Dock Worker',
     evidenceType: 'Witness Statement',
     description: 'Written statement regarding unusual shipments received in the past month',
     documentUrl: '/media/document/document1.pdf',
-    timestamp: '2024-01-17 14:30:00'
+    timestamp: '-'
   },
   {
-    id: 'EV-004',
-    caseId: 'OMEGA-0234',
-    subjectName: 'Gallery Security System',
+    id: 'EV-006',
+    caseId: '2025-147',
+    subjectName: '2849 Oak Avenue security camera',
     evidenceType: 'CCTV',
-    description: 'Footage shows system malfunction at 02:13 - possible EMP device used',
-    videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    timestamp: '2024-02-01 02:13:00'
+    description: 'Footage showing Jane getting into a car-time stamp missing',
+    videoUrl: 'media/video/video2.mov',
+    timestamp: '-'
   },
   {
-    id: 'EV-005',
-    caseId: 'ALPHA-0116',
-    subjectName: 'Surveillance Photo',
+    id: 'EV-007',
+    caseId: '2025-147',
+    subjectName: 'Surveillance Photo at 2849 Oak Avenue',
     evidenceType: 'Photo',
-    description: 'Photo evidence recovered from scene',
+    description: 'Photo evidence of a licence plate',
     photoUrl: '/media/photo/photo1.png',
-    timestamp: '2024-01-16 12:00:00'
+    timestamp: 'as stated'
+  },
+  {
+    id: 'EV-008',
+    caseId: '2025-147',
+    subjectName: 'Surveillance Photo at 2849 Oak Avenue',
+    evidenceType: 'Photo',
+    description: 'Photo evidence of a licence plate',
+    photoUrl: '/media/photo/photo2.png',
+    timestamp: 'as stated'
+  },
+  {
+    id: 'EV-009',
+    caseId: '2025-147',
+    subjectName: 'Olivia Martin',
+    evidenceType: 'Photo',
+    description: 'photo taking during audio statement',
+    photoUrl: '/media/photo/photo3.png',
+    timestamp: 'as stated'
   }
 ];
 
 // Activity log for dashboard
 export const activityLog = [
   { timestamp: '15:47:23', message: 'SYSTEM: Database synchronization complete' },
-  { timestamp: '15:45:01', message: 'ALERT: New evidence uploaded - Case ALPHA-0116' },
+  { timestamp: '15:45:01', message: 'ALERT: New evidence uploaded - Case 2025-147' },
   { timestamp: '15:42:18', message: 'ACCESS: Det. Chen accessed suspect records' },
   { timestamp: '15:38:55', message: 'SYSTEM: Backup procedure initiated' },
-  { timestamp: '15:35:22', message: 'UPDATE: Case BETA-0089 status changed to CLOSED' },
-  { timestamp: '15:30:00', message: 'LOGIN: Authorized access - Badge #4472' },
-  { timestamp: '15:28:47', message: 'QUERY: License plate search - MN3-8847' },
-  { timestamp: '15:25:11', message: 'SYSTEM: Security scan complete - No threats' },
+  { timestamp: '15:35:22', message: 'UPDATE: Case 2025-145 status changed to CLOSED' },
 ];
