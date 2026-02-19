@@ -102,7 +102,7 @@ export const characters: Character[] = [
     lastKnownAddress: 'unknown',
     phoneNumber: '555-0189',
     photoUrl: '/media/mugshot/mugshot_Olivia.png',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Olivia.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_olivia.png',
     carId: 'CAR-001',
     notes: 'Witness picture available: wearing a leopard-print dress in muted beige and black.A fine gold chain bracelet adorned with tiny polished beads and a single luminous stone'
   },
@@ -114,7 +114,7 @@ export const characters: Character[] = [
     lastKnownAddress: 'unknown',
     phoneNumber: '555-0298',
     photoUrl: '/media/mugshot/mugshot_Rachel.png',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Rachel.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_rachel.png',
     carId: 'CAR-002',
     notes: 'Claims she was not in good terms with rachel but that doesn\'t make her a killer'
   },
@@ -126,7 +126,7 @@ export const characters: Character[] = [
     lastKnownAddress: '2847 Oak Avenue',
     phoneNumber: '555-8475',
     photoUrl: '/media/mugshot/mugshot_Sarah.png',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Sarah.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_sarah.png',
     carId: 'CAR-003',
     notes: 'provided witness statement in audio. Person seemed scared and hiding something.'
   },
@@ -138,7 +138,7 @@ export const characters: Character[] = [
     lastKnownAddress: 'unknown',
     phoneNumber: '555-2748',
     photoUrl: '/media/mugshot/mugshot_Derek.png',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Derek.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_derek.png',
     carId: 'CAR-004',
     notes: 'Met Jane the night of the incident. Claimed the evening ended early, but timeline details remain unclear.'
   },
@@ -150,7 +150,7 @@ export const characters: Character[] = [
     lastKnownAddress: '2847 Weston Road',
     phoneNumber: '555-3921',
     photoUrl: '/media/mugshot/mugshot_Travis.png',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Travis.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_travis.png',
     carId: 'CAR-005',
     notes: 'Criminal record: 2019 - Possession of Controlled Substance (Cocaine) - Convicted, 6 months probation 2020 - Domestic Disturbance - Charges dropped 2021 - Assault (Domestic) - Convicted, 1 year probation, anger management program mandated 2023 - Possession of Controlled Substance (Marijuana) - Charges dropped'
   },
@@ -162,7 +162,7 @@ export const characters: Character[] = [
     lastKnownAddress: 'unknown',
     phoneNumber: '555-6103',
     photoUrl: '/media/mugshot/mugshot_Vikash.png',
-    fingerprintUrl: '/media/fingerprints/fingerprint_Vikash.png',
+    fingerprintUrl: '/media/fingerprints/fingerprint_vikash.png',
     carId: 'CAR-006',
     notes: 'Statement saved as audio.'
   },
@@ -300,7 +300,7 @@ export const evidence: Evidence[] = [
     caseId: '2025-147',
     subjectName: 'Surveillance Photo at 2849 Oak Avenue',
     evidenceType: 'Photo',
-    description: 'Photo evidence of a licence plate',
+    description: 'Photo evidence of the grey car',
     photoUrl: '/media/photo/photo1.png',
     timestamp: 'as stated'
   },
@@ -309,7 +309,7 @@ export const evidence: Evidence[] = [
     caseId: '2025-147',
     subjectName: 'Surveillance Photo at 2849 Oak Avenue',
     evidenceType: 'Photo',
-    description: 'Photo evidence of a licence plate',
+    description: 'Photo evidence of the red car',
     photoUrl: '/media/photo/photo2.png',
     timestamp: 'as stated'
   },
@@ -318,7 +318,7 @@ export const evidence: Evidence[] = [
     caseId: '2025-147',
     subjectName: 'Olivia Martin',
     evidenceType: 'Photo',
-    description: 'photo taking during audio statement',
+    description: 'photo taken during audio statement',
     photoUrl: '/media/photo/photo3.png',
     timestamp: 'as stated'
   }
