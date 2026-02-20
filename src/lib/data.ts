@@ -85,7 +85,7 @@ export const cases: Case[] = [
   {
     id: '2025-146',
     caseName: 'Case 2025-146',
-    accessCode: 'SIGMA9',
+    accessCode: 'SIGMA99',
     status: 'Open',
     description: 'Investigation of a missing 50 000 USD from Hartfield Realty',
     dateOpened: '2024-02-01'
