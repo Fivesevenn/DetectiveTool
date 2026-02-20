@@ -69,7 +69,7 @@ export const cases: Case[] = [
   {
     id: '2025-147',
     caseName: 'Case 2025-147',
-    accessCode: '1',
+    accessCode: '8475',
     status: 'Open',
     description: 'Death ruled as drowning of Jane smith. No further investigation required',
     dateOpened: '2024-01-16'

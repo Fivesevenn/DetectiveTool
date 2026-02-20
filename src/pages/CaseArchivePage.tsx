@@ -132,7 +132,7 @@ export default function CaseArchivePage() {
               CASE ACCESS REQUIRED
             </DialogTitle>
             <DialogDescription className="text-muted-foreground">
-              Enter the case access code from your physical kit to proceed.
+              Enter the case access code from your physical kit to proceed. For interns and new hires enter your unit number.
             </DialogDescription>
           </DialogHeader>
           
