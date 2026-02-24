@@ -87,7 +87,7 @@ export const cases: Case[] = [
     caseName: 'Case 2025-146',
     accessCode: 'SIGMA99',
     status: 'Open',
-    description: 'Investigation of a missing 50 000 USD from Hartfield Realty',
+    description: 'Investigation of a missing 50 000 USD from Hartfield Realty (inaccessible-not part of the Game !)',
     dateOpened: '2024-02-01'
   }
 ];
@@ -277,24 +277,16 @@ export const evidence: Evidence[] = [
     audioUrl: '/media/audio/audio4.mp3',
     timestamp: 'No timestamp'
   },
-  {
-    id: 'EV-005',
-    caseId: '2025-147',
-    subjectName: 'Maria Santos - Dock Worker',
-    evidenceType: 'Witness Statement',
-    description: 'Written statement regarding unusual shipments received in the past month',
-    documentUrl: '/media/document/document1.pdf',
-    timestamp: '-'
-  },
-  {
-    id: 'EV-006',
-    caseId: '2025-147',
-    subjectName: '2849 Oak Avenue security camera',
-    evidenceType: 'CCTV',
-    description: 'Footage showing Jane getting into a car-time stamp missing',
-    videoUrl: '/media/video/video2.mp4',
-    timestamp: '-'
-  },
+//
+//  {
+//    id: 'EV-006',
+//    caseId: '2025-147',
+//   subjectName: '2849 Oak Avenue security camera',
+//   evidenceType: 'CCTV',
+//   description: 'Footage showing Jane getting into a car-time stamp missing',
+//    videoUrl: '/media/video/video2.mp4',
+//   timestamp: '-'
+// },
   {
     id: 'EV-007',
     caseId: '2025-147',
