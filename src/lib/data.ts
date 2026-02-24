@@ -86,8 +86,8 @@ export const cases: Case[] = [
     id: '2025-146',
     caseName: 'Case 2025-146',
     accessCode: 'SIGMA99',
-    status: 'Open',
-    description: 'Missing 50 000 USD from Hartfield Realty (Not part of the Game !)',
+    status: 'Closed',
+    description: 'Missing 50 000 USD from Hartfield Realty (unsolved)',
     dateOpened: '2024-02-01'
   }
 ];
