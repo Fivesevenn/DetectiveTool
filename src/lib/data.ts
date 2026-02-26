@@ -97,7 +97,7 @@ export const characters: Character[] = [
   {
     id: 'CHAR-001',
     caseId: '2025-147',
-    fullName: 'Olivia Jean Martin',
+    fullName: 'Olivia Rose Martin',
     alias: 'The Bestfriend',
     lastKnownAddress: 'unknown',
     phoneNumber: '555-0189',
