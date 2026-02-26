@@ -128,7 +128,7 @@ export const characters: Character[] = [
     photoUrl: '/media/mugshot/mugshot_Sarah.png',
     fingerprintUrl: '/media/fingerprints/fingerprint_sarah.png',
     carId: 'CAR-003',
-    notes: 'provided witness statement in audio. Person seemed scared and hiding something.'
+    notes: 'Person seemed scared and hiding something.Stated she was in Ohio that week and did not meet her sister'
   },
   {
     id: 'CHAR-004',
