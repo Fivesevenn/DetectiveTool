@@ -277,16 +277,16 @@ export const evidence: Evidence[] = [
     audioUrl: '/media/audio/audio4.mp3',
     timestamp: 'No timestamp'
   },
-//
-//  {
-//    id: 'EV-006',
-//    caseId: '2025-147',
-//   subjectName: '2849 Oak Avenue security camera',
-//   evidenceType: 'CCTV',
-//   description: 'Footage showing Jane getting into a car-time stamp missing',
-//    videoUrl: '/media/video/video2.mp4',
-//   timestamp: '-'
-// },
+
+  {
+    id: 'EV-006',
+    caseId: '2025-147',
+   subjectName: '2849 Oak Avenue security camera',
+   evidenceType: 'CCTV',
+   description: 'Footage showing Jane getting into a car-time stamp missing',
+    videoUrl: '/media/video/video2.mp4',
+   timestamp: '-'
+ },
   {
     id: 'EV-007',
     caseId: '2025-147',
