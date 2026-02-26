@@ -58,7 +58,7 @@ export interface Evidence {
 export const detectives: Detective[] = [
   {
     badgeNumber: '3295',
-    password: 'JLTFG',
+    password: 'FRIJT',
     name: 'Detective Martinez',
     rank: 'Intern'
   }
